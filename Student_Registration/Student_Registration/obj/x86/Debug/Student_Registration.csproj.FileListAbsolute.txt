@@ -1,0 +1,11 @@
+E:\Project\Student_Registration\Student_Registration\obj\x86\Debug\Student_Registration.csprojResolveAssemblyReference.cache
+E:\Project\Student_Registration\Student_Registration\obj\x86\Debug\Student_Registration.frm_SGM_Login.resources
+E:\Project\Student_Registration\Student_Registration\obj\x86\Debug\Student_Registration.Properties.Resources.resources
+E:\Project\Student_Registration\Student_Registration\obj\x86\Debug\Student_Registration.csproj.GenerateResource.Cache
+E:\Project\Student_Registration\Student_Registration\bin\Debug\Student_Registration.exe
+E:\Project\Student_Registration\Student_Registration\bin\Debug\Student_Registration.pdb
+E:\Project\Student_Registration\Student_Registration\obj\x86\Debug\Student_Registration.exe
+E:\Project\Student_Registration\Student_Registration\obj\x86\Debug\Student_Registration.pdb
+E:\Project\Student_Registration\Student_Registration\obj\x86\Debug\Student_Registration.frm_Add_Student_Details.resources
+E:\Project\Student_Registration\Student_Registration\obj\x86\Debug\Student_Registration.frm_View_Student_List.resources
+E:\Project\Student_Registration\Student_Registration\bin\Debug\Student_Registration.exe.config
