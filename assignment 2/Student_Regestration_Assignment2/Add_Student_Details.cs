@@ -132,37 +132,8 @@ namespace Student_Regestration_Assignment2
         {
             Clear_Controls();
             tb_Roll_No.Focus();
+            lbl_Uname.Text = Shared_Class1.Username;
 
-        }
-
-        private void btn_Refresh_Click(object sender, EventArgs e)
-        {
-            Clear_Controls();
-        }
-
-        private void btn_Search_Click(object sender, EventArgs e)
-        {
-            Con.Open();
-            
-            SqlCommand cmd = new SqlCommand("Select * From Student_Details where Roll_No =@Roll_No", Con);
-            cmd.Parameters.Add("Roll_No", SqlDbType.Int).Value = tb_Roll_No.Text;
-            cmd.Connection = Con;
-            SqlDataReader DR = cmd.ExecuteReader();
-
-            if (DR.Read())
-            {
-                tb_Name.Text = DR.GetString(DR.GetOrdinal("Name"));
-                tb_Mobile_No.Text = (DR["Mobile_No"].ToString());
-                dtp_DOB.Text = (DR["DOB"].ToString());
-                cb_Course.Text =DR.GetString(DR.GetOrdinal("Course"));
-            }
-
-            else
-            {
-                MessageBox.Show("No Record Found", "Invalid Roll No", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tb_Roll_No.Clear();
-            }
-            Con.Close();
         }
         
     }

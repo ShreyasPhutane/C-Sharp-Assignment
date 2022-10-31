@@ -37,13 +37,12 @@
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_View_Student_Details = new System.Windows.Forms.Button();
             this.btn_Logout = new System.Windows.Forms.Button();
-            this.btn_Refresh = new System.Windows.Forms.Button();
             this.tb_Roll_No = new System.Windows.Forms.TextBox();
             this.tb_Name = new System.Windows.Forms.TextBox();
             this.tb_Mobile_No = new System.Windows.Forms.TextBox();
             this.cb_Course = new System.Windows.Forms.ComboBox();
             this.dtp_DOB = new System.Windows.Forms.DateTimePicker();
-            this.btn_Search = new System.Windows.Forms.Button();
+            this.lbl_Uname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_Add_Student_Details
@@ -109,7 +108,7 @@
             // btn_Save
             // 
             this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(314, 566);
+            this.btn_Save.Location = new System.Drawing.Point(168, 563);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(164, 57);
             this.btn_Save.TabIndex = 6;
@@ -120,7 +119,7 @@
             // btn_View_Student_Details
             // 
             this.btn_View_Student_Details.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_View_Student_Details.Location = new System.Drawing.Point(559, 564);
+            this.btn_View_Student_Details.Location = new System.Drawing.Point(447, 563);
             this.btn_View_Student_Details.Name = "btn_View_Student_Details";
             this.btn_View_Student_Details.Size = new System.Drawing.Size(500, 57);
             this.btn_View_Student_Details.TabIndex = 7;
@@ -138,17 +137,6 @@
             this.btn_Logout.Text = "LOGOUT";
             this.btn_Logout.UseVisualStyleBackColor = true;
             this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
-            // 
-            // btn_Refresh
-            // 
-            this.btn_Refresh.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Refresh.Location = new System.Drawing.Point(68, 566);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(194, 57);
-            this.btn_Refresh.TabIndex = 8;
-            this.btn_Refresh.Text = "REFRESH";
-            this.btn_Refresh.UseVisualStyleBackColor = true;
-            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // tb_Roll_No
             // 
@@ -203,29 +191,27 @@
             this.dtp_DOB.Size = new System.Drawing.Size(274, 36);
             this.dtp_DOB.TabIndex = 3;
             // 
-            // btn_Search
+            // lbl_Uname
             // 
-            this.btn_Search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Search.Location = new System.Drawing.Point(705, 183);
-            this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(114, 46);
-            this.btn_Search.TabIndex = 9;
-            this.btn_Search.Text = "SEARCH";
-            this.btn_Search.UseVisualStyleBackColor = true;
-            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            this.lbl_Uname.AutoSize = true;
+            this.lbl_Uname.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Uname.Location = new System.Drawing.Point(12, 12);
+            this.lbl_Uname.Name = "lbl_Uname";
+            this.lbl_Uname.Size = new System.Drawing.Size(159, 32);
+            this.lbl_Uname.TabIndex = 28;
+            this.lbl_Uname.Text = "WELCOME";
             // 
             // frm_Add_Student_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 653);
-            this.Controls.Add(this.btn_Search);
+            this.Controls.Add(this.lbl_Uname);
             this.Controls.Add(this.dtp_DOB);
             this.Controls.Add(this.cb_Course);
             this.Controls.Add(this.tb_Mobile_No);
             this.Controls.Add(this.tb_Name);
             this.Controls.Add(this.tb_Roll_No);
-            this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.btn_Logout);
             this.Controls.Add(this.btn_View_Student_Details);
             this.Controls.Add(this.btn_Save);
@@ -254,12 +240,11 @@
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_View_Student_Details;
         private System.Windows.Forms.Button btn_Logout;
-        private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.TextBox tb_Roll_No;
         private System.Windows.Forms.TextBox tb_Name;
         private System.Windows.Forms.TextBox tb_Mobile_No;
         private System.Windows.Forms.ComboBox cb_Course;
         private System.Windows.Forms.DateTimePicker dtp_DOB;
-        private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.Label lbl_Uname;
     }
 }

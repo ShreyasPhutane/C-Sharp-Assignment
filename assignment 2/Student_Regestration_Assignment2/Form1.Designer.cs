@@ -35,6 +35,7 @@
             this.tb_Username = new System.Windows.Forms.TextBox();
             this.tb_Password = new System.Windows.Forms.TextBox();
             this.lbl_Error = new System.Windows.Forms.Label();
+            this.lbl_Uname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_Student_Login
@@ -112,12 +113,23 @@
             this.lbl_Error.TabIndex = 4;
             this.lbl_Error.Text = "Invalid Username  Or Password";
             // 
+            // lbl_Uname
+            // 
+            this.lbl_Uname.AutoSize = true;
+            this.lbl_Uname.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Uname.Location = new System.Drawing.Point(12, 18);
+            this.lbl_Uname.Name = "lbl_Uname";
+            this.lbl_Uname.Size = new System.Drawing.Size(159, 32);
+            this.lbl_Uname.TabIndex = 5;
+            this.lbl_Uname.Text = "WELCOME";
+            // 
             // Frm_Student_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(982, 653);
+            this.Controls.Add(this.lbl_Uname);
             this.Controls.Add(this.lbl_Error);
             this.Controls.Add(this.tb_Password);
             this.Controls.Add(this.tb_Username);
@@ -141,6 +153,7 @@
         private System.Windows.Forms.TextBox tb_Username;
         private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.Label lbl_Error;
+        private System.Windows.Forms.Label lbl_Uname;
     }
 }
 

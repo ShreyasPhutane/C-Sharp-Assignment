@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Student_Regestration_Assignment2
 {
@@ -15,12 +16,43 @@ namespace Student_Regestration_Assignment2
         {
             InitializeComponent();
         }
+        SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Student_Registration_db;Integrated Security=True");
 
+        void Con_Open()
+        {
+            if (Con.State != ConnectionState.Open)
+            {
+                Con.Open();
+            }         
+        }
+
+        void Con_Close()
+        {
+            if (Con.State != ConnectionState.Closed)
+            {
+                Con.Close();
+            }
+        }
         private void btn_Submit_Click(object sender, EventArgs e)
         {
-            if (((tb_Username.Text == "Admin") && (tb_Password.Text == "123")) || ((tb_Username.Text == "A") && (tb_Password.Text == "A")))
+            
+            int Cnt = 0;
+            Con_Open();
+            SqlCommand Cmd = new SqlCommand();
+            Cmd.Connection = Con;
+            Cmd.CommandText = "Select Count(*) From Login_Details Where Username =@Uname And Password=@Pwd";
+
+            Cmd.Parameters.Add("Uname", SqlDbType.NVarChar).Value = tb_Username.Text;
+            Cmd.Parameters.Add("Pwd", SqlDbType.NVarChar).Value = tb_Password.Text;
+
+            Cnt = Convert.ToInt32(Cmd.ExecuteScalar());
+
+            if (Cnt>0)
             {
                 MessageBox.Show("Loginn Successsful", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Shared_Class1.Username = "WELCOME" + tb_Username.Text;
+                
+                Con_Close();
 
                 frm_Add_Student_Details obj = new frm_Add_Student_Details();
                 obj.Show();
