@@ -16,7 +16,7 @@ namespace Student_Regestration_Assignment2
         {
             InitializeComponent();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Student_Registration_db;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=SHREYAS\SQLEXPRESS01;Initial Catalog=Student_Registration.db;Integrated Security=True");
 
         void Con_Open()
         {
@@ -135,6 +135,10 @@ namespace Student_Regestration_Assignment2
             lbl_Uname.Text = Shared_Class1.Username;
 
         }
-        
+
+        private void tb_Roll_No_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

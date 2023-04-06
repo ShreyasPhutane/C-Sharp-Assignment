@@ -70,7 +70,7 @@
             this.lbl_Password.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lbl_Password.Location = new System.Drawing.Point(237, 393);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(231, 43);
+            this.lbl_Password.Size = new System.Drawing.Size(227, 42);
             this.lbl_Password.TabIndex = 2;
             this.lbl_Password.Text = "PASSWORD";
             // 
@@ -109,7 +109,7 @@
             this.lbl_Error.ForeColor = System.Drawing.Color.Black;
             this.lbl_Error.Location = new System.Drawing.Point(325, 488);
             this.lbl_Error.Name = "lbl_Error";
-            this.lbl_Error.Size = new System.Drawing.Size(396, 32);
+            this.lbl_Error.Size = new System.Drawing.Size(395, 32);
             this.lbl_Error.TabIndex = 4;
             this.lbl_Error.Text = "Invalid Username  Or Password";
             // 
@@ -119,7 +119,7 @@
             this.lbl_Uname.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Uname.Location = new System.Drawing.Point(12, 18);
             this.lbl_Uname.Name = "lbl_Uname";
-            this.lbl_Uname.Size = new System.Drawing.Size(159, 32);
+            this.lbl_Uname.Size = new System.Drawing.Size(158, 32);
             this.lbl_Uname.TabIndex = 5;
             this.lbl_Uname.Text = "WELCOME";
             // 

@@ -1,0 +1,11 @@
+E:\Project\practice\practice\bin\Debug\practice.exe.config
+E:\Project\practice\practice\bin\Debug\practice.exe
+E:\Project\practice\practice\bin\Debug\practice.pdb
+E:\Project\practice\practice\obj\Debug\practice.csproj.AssemblyReference.cache
+E:\Project\practice\practice\obj\Debug\practice.csproj.SuggestedBindingRedirects.cache
+E:\Project\practice\practice\obj\Debug\practice.frm_login_form.resources
+E:\Project\practice\practice\obj\Debug\practice.Properties.Resources.resources
+E:\Project\practice\practice\obj\Debug\practice.csproj.GenerateResource.cache
+E:\Project\practice\practice\obj\Debug\practice.csproj.CoreCompileInputs.cache
+E:\Project\practice\practice\obj\Debug\practice.exe
+E:\Project\practice\practice\obj\Debug\practice.pdb

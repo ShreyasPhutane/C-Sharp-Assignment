@@ -1,0 +1,113 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace SGM_App_Mangement
+{
+    public partial class Frm_Add_New_Student : Form
+    {
+        public Frm_Add_New_Student()
+        {
+            InitializeComponent();
+        }
+        SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=SGM_App_Mangement_db;Integrated Security=True");
+
+        void Con_Open()
+        {
+            if (Con.State != ConnectionState.Open)
+            {
+                Con.Open();
+            }
+        }
+
+        void Con_Close()
+        {
+            if (Con.State != ConnectionState.Closed)
+            {
+                Con.Close();
+            }
+        }
+           
+      
+
+
+
+        private void btn_Log_Out_Click(object sender, EventArgs e)
+        {
+            frm_Login Obj = new frm_Login();
+            this.Hide();
+            Obj.Show();
+        }
+
+        private void btn_View_Student_List_Click(object sender, EventArgs e)
+        {
+            frm_View_Student_List Obj = new frm_View_Student_List();
+            this.Hide();
+            Obj.Show();
+        }
+
+        private void Only_Numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Only_Text(object sender, KeyPressEventArgs e)
+        {
+            if(!(char.IsLetter(e.KeyChar) || (e.KeyChar == (char)Keys.Back) || (e.KeyChar == (char)Keys.Space) || (e.KeyChar == (char)Keys.ShiftKey)))
+
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            Con.Open();
+
+            if(txt_Roll_No.Text !="" && txt_Name.Text !="" && txt_Mobile_No.Text !="" && txt_Mobile_No.TextLength == 10 && cmb_Course.Text !="")
+            {
+                SqlCommand Cmd = new SqlCommand();
+                Cmd.Connection = Con;
+                Cmd.CommandText = "Insert Into tbl_Student_List (Roll_No,Name,DOB,Mobile_No,Course) Values(@RollNo,@Nm,@DOB,@MNo,@Course)";
+
+                Cmd.Parameters.Add("RollNo",SqlDbType.Int).Value=txt_Roll_No.Text;
+                Cmd.Parameters.Add("Nm",SqlDbType.VarChar).Value= txt_Name.Text;
+                Cmd.Parameters.Add("DOB",SqlDbType.Date).Value= dtp_DOB.Value.Date;
+                Cmd.Parameters.Add("MNo",SqlDbType.Decimal).Value=txt_Mobile_No.Text;
+                Cmd.Parameters.Add("Course",SqlDbType.NVarChar).Value=cmb_Course.Text;
+
+                Cmd.ExecuteNonQuery();
+                
+                MessageBox.Show("Record Inserted Succesfully","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                txt_Roll_No.Clear();
+                txt_Name.Clear();
+                txt_Mobile_No.Clear();
+                dtp_DOB.Text = "";
+                cmb_Course.SelectedIndex = -1;
+            }
+            else
+            {
+                MessageBox.Show("Fill All Field Compulsary","Failed",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            
+            Con.Close();
+        }
+
+        private void Frm_Add_New_Student_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
+    }
+}

@@ -1,0 +1,8 @@
+E:\Project\Workshop_Project\Workshop_Project\obj\Debug\net6.0-windows\Workshop_Project.csproj.AssemblyReference.cache
+E:\Project\Workshop_Project\Workshop_Project\obj\Debug\net6.0-windows\Workshop_Project.frm_Costumer_Registration.resources
+E:\Project\Workshop_Project\Workshop_Project\obj\Debug\net6.0-windows\Workshop_Project.frm_Login.resources
+E:\Project\Workshop_Project\Workshop_Project\obj\Debug\net6.0-windows\Workshop_Project.csproj.GenerateResource.cache
+E:\Project\Workshop_Project\Workshop_Project\obj\Debug\net6.0-windows\Workshop_Project.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project\Workshop_Project\Workshop_Project\obj\Debug\net6.0-windows\Workshop_Project.AssemblyInfoInputs.cache
+E:\Project\Workshop_Project\Workshop_Project\obj\Debug\net6.0-windows\Workshop_Project.AssemblyInfo.cs
+E:\Project\Workshop_Project\Workshop_Project\obj\Debug\net6.0-windows\Workshop_Project.csproj.CoreCompileInputs.cache

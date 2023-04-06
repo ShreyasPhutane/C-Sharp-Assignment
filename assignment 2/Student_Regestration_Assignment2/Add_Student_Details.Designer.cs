@@ -51,7 +51,7 @@
             this.lbl_Add_Student_Details.Font = new System.Drawing.Font("Times New Roman", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Add_Student_Details.Location = new System.Drawing.Point(241, 56);
             this.lbl_Add_Student_Details.Name = "lbl_Add_Student_Details";
-            this.lbl_Add_Student_Details.Size = new System.Drawing.Size(609, 76);
+            this.lbl_Add_Student_Details.Size = new System.Drawing.Size(608, 76);
             this.lbl_Add_Student_Details.TabIndex = 0;
             this.lbl_Add_Student_Details.Text = "Add Student Details";
             // 
@@ -146,6 +146,7 @@
             this.tb_Roll_No.Name = "tb_Roll_No";
             this.tb_Roll_No.Size = new System.Drawing.Size(128, 36);
             this.tb_Roll_No.TabIndex = 1;
+            this.tb_Roll_No.TextChanged += new System.EventHandler(this.tb_Roll_No_TextChanged);
             this.tb_Roll_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // tb_Name
@@ -197,7 +198,7 @@
             this.lbl_Uname.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Uname.Location = new System.Drawing.Point(12, 12);
             this.lbl_Uname.Name = "lbl_Uname";
-            this.lbl_Uname.Size = new System.Drawing.Size(159, 32);
+            this.lbl_Uname.Size = new System.Drawing.Size(158, 32);
             this.lbl_Uname.TabIndex = 28;
             this.lbl_Uname.Text = "WELCOME";
             // 

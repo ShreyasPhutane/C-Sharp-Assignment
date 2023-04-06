@@ -12,7 +12,6 @@ E:\Project\Student_Regestration_Assignment2\Student_Regestration_Assignment2\bin
 E:\Project\assignment 2\Student_Regestration_Assignment2\bin\Debug\Student_Regestration_Assignment2.exe.config
 E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.exe
 E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.pdb
-E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.csprojResolveAssemblyReference.cache
 E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.frm_Add_Student_Details.resources
 E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.Frm_Student_Login.resources
 E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.frm_Search_Student_List.resources
@@ -21,3 +20,6 @@ E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_R
 E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.csproj.GenerateResource.Cache
 E:\Project\assignment 2\Student_Regestration_Assignment2\bin\Debug\Student_Regestration_Assignment2.exe
 E:\Project\assignment 2\Student_Regestration_Assignment2\bin\Debug\Student_Regestration_Assignment2.pdb
+E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.csproj.AssemblyReference.cache
+E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.csproj.SuggestedBindingRedirects.cache
+E:\Project\assignment 2\Student_Regestration_Assignment2\obj\x86\Debug\Student_Regestration_Assignment2.csproj.CoreCompileInputs.cache

@@ -16,7 +16,7 @@ namespace Student_Regestration_Assignment2
         {
             InitializeComponent();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Student_Registration_db;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=SHREYAS\SQLEXPRESS01;Initial Catalog=Student_Registration.db;Integrated Security=True");
 
         void Con_Open()
         {
@@ -38,31 +38,35 @@ namespace Student_Regestration_Assignment2
             
             int Cnt = 0;
             Con_Open();
-            SqlCommand Cmd = new SqlCommand();
-            Cmd.Connection = Con;
-            Cmd.CommandText = "Select Count(*) From Login_Details Where Username =@Uname And Password=@Pwd";
 
-            Cmd.Parameters.Add("Uname", SqlDbType.NVarChar).Value = tb_Username.Text;
-            Cmd.Parameters.Add("Pwd", SqlDbType.NVarChar).Value = tb_Password.Text;
+             
+                SqlCommand Cmd = new SqlCommand();
+                Cmd.Connection = Con;
+                Cmd.CommandText = "Select Count(*) From Student_Details Where Username =@Uname And Password=@Pwd";
 
-            Cnt = Convert.ToInt32(Cmd.ExecuteScalar());
+                Cmd.Parameters.Add("Uname", SqlDbType.NVarChar).Value = tb_Username.Text;
+                Cmd.Parameters.Add("Pwd", SqlDbType.NVarChar).Value = tb_Password.Text;
 
-            if (Cnt>0)
-            {
-                MessageBox.Show("Loginn Successsful", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Shared_Class1.Username = "WELCOME" + tb_Username.Text;
+                Cnt = Convert.ToInt32(Cmd.ExecuteScalar());
                 
-                Con_Close();
+                if (Cnt < 0)
+                {
+                    MessageBox.Show("Loginn Successsful", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Shared_Class1.Username = "WELCOME" + tb_Username.Text;
 
-                frm_Add_Student_Details obj = new frm_Add_Student_Details();
-                obj.Show();
-                this.Hide();
-            }
-            else
-            {
-                lbl_Error.Text = "Invalid Username Or Password";
-                lbl_Error.ForeColor = Color.OrangeRed;
-            }
+                    Con_Close();
+
+                    frm_Add_Student_Details obj = new frm_Add_Student_Details();
+                    obj.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    lbl_Error.Text = "Invalid Username Or Password";
+                    lbl_Error.ForeColor = Color.OrangeRed;
+                }
+            
+
             tb_Username.Clear();
             tb_Password.Clear();
 

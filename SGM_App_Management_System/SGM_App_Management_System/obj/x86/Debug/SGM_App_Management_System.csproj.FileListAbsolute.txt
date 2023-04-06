@@ -1,0 +1,11 @@
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\bin\Debug\SGM_App_Management_System.exe.config
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\obj\x86\Debug\SGM_App_Management_System.csprojResolveAssemblyReference.cache
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\obj\x86\Debug\SGM_App_Management_System.frm_Add_New_Student.resources
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\obj\x86\Debug\SGM_App_Management_System.frm_View_Student_List.resources
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\obj\x86\Debug\SGM_App_Management_System.frm_Login.resources
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\obj\x86\Debug\SGM_App_Management_System.Properties.Resources.resources
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\obj\x86\Debug\SGM_App_Management_System.csproj.GenerateResource.Cache
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\bin\Debug\SGM_App_Management_System.exe
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\bin\Debug\SGM_App_Management_System.pdb
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\obj\x86\Debug\SGM_App_Management_System.exe
+E:\Project\SGM_App_Management_System\SGM_App_Management_System\obj\x86\Debug\SGM_App_Management_System.pdb
