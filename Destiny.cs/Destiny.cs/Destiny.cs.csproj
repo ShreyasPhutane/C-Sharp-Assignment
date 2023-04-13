@@ -33,11 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,106 +55,173 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="All_Details.cs">
+    <Compile Include="Datasets\DS_Registration_Details.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Registration_Details.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\All_Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="All_Details.Designer.cs">
+    <Compile Include="Forms\All_Details.Designer.cs">
       <DependentUpon>All_Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Destiny_Shared_Containt.cs" />
-    <Compile Include="Frm_Add_Expence_Details.cs">
+    <Compile Include="Forms\Frm_Add_Expence_Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Add_Expence_Details.Designer.cs">
+    <Compile Include="Forms\Frm_Add_Expence_Details.Designer.cs">
       <DependentUpon>Frm_Add_Expence_Details.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Add_New_Staff_Details.cs">
+    <Compile Include="Forms\frm_Add_New_Staff_Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Add_New_Staff_Details.Designer.cs">
+    <Compile Include="Forms\frm_Add_New_Staff_Details.Designer.cs">
       <DependentUpon>frm_Add_New_Staff_Details.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Choose_Membership.cs">
+    <Compile Include="Forms\frm_Candidate_List.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Choose_Membership.Designer.cs">
-      <DependentUpon>frm_Choose_Membership.cs</DependentUpon>
+    <Compile Include="Forms\frm_Candidate_List.Designer.cs">
+      <DependentUpon>frm_Candidate_List.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Home.cs">
+    <Compile Include="Forms\frm_Districtwise_Report.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Home.Designer.cs">
+    <Compile Include="Forms\frm_Districtwise_Report.Designer.cs">
+      <DependentUpon>frm_Districtwise_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Home.Designer.cs">
       <DependentUpon>frm_Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Profile_Information.cs">
+    <Compile Include="Forms\frm_individual_report.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Profile_Information.Designer.cs">
+    <Compile Include="Forms\frm_individual_report.Designer.cs">
+      <DependentUpon>frm_individual_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Profile_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Profile_Information.Designer.cs">
       <DependentUpon>frm_Profile_Information.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Create_Profile_For.cs">
+    <Compile Include="Forms\Frm_Create_Profile_For.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Create_Profile_For.Designer.cs">
+    <Compile Include="Forms\Frm_Create_Profile_For.Designer.cs">
       <DependentUpon>Frm_Create_Profile_For.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Login.cs">
+    <Compile Include="Forms\frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Login.Designer.cs">
+    <Compile Include="Forms\frm_Login.Designer.cs">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Matching_Form.cs">
+    <Compile Include="Forms\frm_Matching_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Matching_Form.Designer.cs">
+    <Compile Include="Forms\frm_Matching_Form.Designer.cs">
       <DependentUpon>frm_Matching_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Registration_Payment.cs">
+    <Compile Include="Forms\frm_Registration_Payment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Registration_Payment.Designer.cs">
+    <Compile Include="Forms\frm_Registration_Payment.Designer.cs">
       <DependentUpon>frm_Registration_Payment.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Update_Staff_Details.cs">
+    <Compile Include="Forms\frm_All_Reports.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Update_Staff_Details.Designer.cs">
+    <Compile Include="Forms\frm_All_Reports.Designer.cs">
+      <DependentUpon>frm_All_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Splash.Designer.cs">
+      <DependentUpon>frm_Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Update_Staff_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Update_Staff_Details.Designer.cs">
       <DependentUpon>frm_Update_Staff_Details.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="All_Details.resx">
+    <Compile Include="Reports\CR_Candidate_LIst.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Candidate_LIst.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CR_Districtwise_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Districtwise_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cr_Individual_Biodata.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cr_Individual_Biodata.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\All_Details.resx">
       <DependentUpon>All_Details.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Add_Expence_Details.resx">
+    <EmbeddedResource Include="Forms\Frm_Add_Expence_Details.resx">
       <DependentUpon>Frm_Add_Expence_Details.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Add_New_Staff_Details.resx">
+    <EmbeddedResource Include="Forms\frm_Add_New_Staff_Details.resx">
       <DependentUpon>frm_Add_New_Staff_Details.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Choose_Membership.resx">
-      <DependentUpon>frm_Choose_Membership.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_Candidate_List.resx">
+      <DependentUpon>frm_Candidate_List.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Home.resx">
+    <EmbeddedResource Include="Forms\frm_Districtwise_Report.resx">
+      <DependentUpon>frm_Districtwise_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Home.resx">
       <DependentUpon>frm_Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Profile_Information.resx">
+    <EmbeddedResource Include="Forms\frm_individual_report.resx">
+      <DependentUpon>frm_individual_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Profile_Information.resx">
       <DependentUpon>frm_Profile_Information.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Create_Profile_For.resx">
+    <EmbeddedResource Include="Forms\Frm_Create_Profile_For.resx">
       <DependentUpon>Frm_Create_Profile_For.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Login.resx">
+    <EmbeddedResource Include="Forms\frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Matching_Form.resx">
+    <EmbeddedResource Include="Forms\frm_Matching_Form.resx">
       <DependentUpon>frm_Matching_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Registration_Payment.resx">
+    <EmbeddedResource Include="Forms\frm_Registration_Payment.resx">
       <DependentUpon>frm_Registration_Payment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Update_Staff_Details.resx">
+    <EmbeddedResource Include="Forms\frm_All_Reports.resx">
+      <DependentUpon>frm_All_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Splash.resx">
+      <DependentUpon>frm_Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Update_Staff_Details.resx">
       <DependentUpon>frm_Update_Staff_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -161,6 +234,40 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reports\CR_Candidate_LIst.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Candidate_LIst.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CR_Districtwise_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Districtwise_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cr_Individual_Biodata.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cr_Individual_Biodata.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_Registration_Details.xsc">
+      <DependentUpon>DS_Registration_Details.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_Registration_Details.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Registration_Details.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datasets\DS_Registration_Details.xss">
+      <DependentUpon>DS_Registration_Details.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -255,6 +362,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\7170.png_860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="photos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
